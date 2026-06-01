@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/dinner (2).png">
+    <title>Delizia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="tablebook" id="tablebook">
+        <div class="login" style="width:400px;height:410px;margin: 50px 0px;padding:30px;">
+            <h1 style="font-size:27px;margin-top: 40px;">Reserve a Table</h1>
+            <form>
+                <div class="inputs">
+                    <i class="fa-solid fa-users"></i>
+                    <select class="dropdown" id="Persons" autofocus>
+                        <option disabled>Persons</option>
+                        <option>1 Persons</option>
+                        <option>2 Persons</option>
+                        <option>3 Persons</option>
+                        <option>4 Persons</option>
+                        <option>5 Persons</option>
+                        <option>6 Persons</option>
+                    </select>
+                </div>
+                <div class="inputs">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="date" id="date" name="date" placeholder="Date" value="2026-05-31">
+                </div>
+                <div class="inputs">
+                    <i class="fa-solid fa-clock"></i>
+                    <input type="time" id="time" name="time" min="9:00" max="22:00" value="09:30">
+                </div>
+                <div class="inputs">
+                    <i style="top:35%" class="fa-solid fa-comments"></i>
+                    <textarea name="comments" class="multitext" placeholder="Comments(Optional)"></textarea>
+                </div>
+            </form>
+            <button style="padding:10px;width:150px;margin-bottom: 30px;" type="button" onclick="booktable()">Book Table</button>
+        </div>
+    </div>
+</body>
+</html>
+        

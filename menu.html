@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/dinner (2).png">
+    <title>Delizia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="menu-container">
+        <div id="navbar"></div>
+        <h1 style="font-family: 'Times New Roman', Times, serif;"><b>Our Popular Menu</b></h1>
+        <p style="opacity: 0.5;">Enjoy great food, warm hospitality, and a memorable dining experience with every visit.</p>
+        <nav class="menu-nav">
+                <button onclick="filteritems('burger')"><img src="images/burger.png" alt="Burgers">Burgers</button>
+                <button onclick="filteritems('pizza')"><img src="images/pizza.png" alt="Pizza">Pizza</button>
+                <button onclick="filteritems('pasta')"><img src="images/spaguetti.png" alt="Pasta">Pasta</button>
+                <button onclick="filteritems('desserts')"><img src="images/cake.png" alt="Desserts">Desserts</button>
+                <button onclick="filteritems('drinks')"><img src="images/poinsettia.png" alt="Drinks">Drinks</button>
+        </nav>
+        <div class="menu-items">
+
+            <div class="card burger">
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/WhatsApp Image 2026-05-29 at 14.23.03.jpeg" alt="chicken burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Crispy Chicken Burger</figcaption>
+                        <p >A delicious crispy fried chicken patty with lettuce, tomato, and mayo.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$2.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/cheeseburger.jpeg" alt="cheese burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Classic Cheese Burger</figcaption>
+                        <p >A classic cheeseburger with melted cheese, and fresh vegetables.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/baconburger.jpeg" alt="bacon burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Double Beef Burger</figcaption>
+                        <p >A double beef burger with two juicy beef patties, melted cheese, and fresh vegetables.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$4.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/alootikki.jpg" alt="aloo tikki burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Aloo Tikki Burger</figcaption>
+                        <p >A vegetarian burger with a spiced potato patty, melted cheese, and fresh vegetables.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$6.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/mushroomswiss.jpg" alt="mushroom swiss burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Mushroom Swiss Burger</figcaption>
+                        <p >A delicious mushroom Swiss burger with sauted mushrooms, swiss cheese, and garlic Aioli.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$4.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/veggieburger.jpg" alt="veggie burger" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Veggie Burger</figcaption>
+                        <p >A vegetarian burger with a spiced potato patty, melted cheese, and fresh vegetables.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card pizza hide">
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/pepperoni.jpg" alt="pepperoni pizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Pepperoni Pizza</figcaption>
+                        <p >Crispy pepperoni slices layered over gooey cheese and tangy tomato sauce.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$4.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/pannerpizza.jpg" alt="paneer tikka pizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Paneer Tikka Pizza</figcaption>
+                        <p >A delicious pizza with paneer tikka, mozzarella cheese, and tomato sauce.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/bbqpizza.jpg" alt="bbq pizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>BBQ Chicken Pizza</figcaption>
+                        <p >Juicy grilled chicken with smoky BBQ sauce,creating the perfect savory bite.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/mushroompizza.jpg" alt="mushroom pizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Mushroom and Olive Pizza</figcaption>
+                        <p >Fresh mushrooms and black olives topped with cheesy mozzarella.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/cheesepizza.jpg" alt="cheese pizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Cheese Burst Pizza</figcaption>
+                        <p >A tasty pizza loaded with creamy melted cheese for a classic cheesy bite.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/hawaiianpizza.jpg" alt="hawaiianpizza" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.3</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Hawaiian Pizza</figcaption>
+                        <p >Sweet pineapple and savory chicken blended with mozzarella cheese.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$5.99</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card pasta hide">
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/tomatosaucepasta.jpg" alt="tomato sauce pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Tomato Sauce Pasta</figcaption>
+                        <p >Fresh tomato sauce pasta blended with garlic and Italian herbs.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$2.45</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/alfredopasta.jpg" alt="alfredo pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.3</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Creamy Alfredo Pasta</figcaption>
+                        <p >Rich creamy Alfredo sauce tossed with soft flavorful pasta.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$2.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/chickenpasta.jpg" alt="chicken pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Creamy Cajun Chicken Pasta</figcaption>
+                        <p >Spicy Cajun chicken mixed with creamy sauce and pasta.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/mushroompasta.jpg" alt="mushroom pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Vegan Mushroom Pasta</figcaption>
+                        <p >Juicy mushrooms cooked in a creamy dairy-free vegan sauce.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$4.25</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/tacopasta.jpg" alt="taco pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Cheesy Taco Pasta</figcaption>
+                        <p >Taco-seasoned pasta loaded with melted cheese and bold flavors.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.55</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/pesto.jpg" alt="pesto pasta" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Pesto Pasta</figcaption>
+                        <p >Fresh basil pesto blended with pasta for a rich herbal flavor.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$3.95</span>
+                </div>
+            </div>
+        </div>
+        </div>  
+
+        <div class="card desserts hide">
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/cake.jpg" alt="cake" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Truffle Chocolate Cake</figcaption>
+                        <p >Rich chocolate cake filled with smooth chocolate truffle cream.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.99</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/cupcake.jpg" alt="cupcake" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Cupcake</figcaption>
+                        <p >Fluffy mini cake topped with sweet creamy frosting.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$0.45</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/icecream.jpg" alt="ice cream" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Ice Cream</figcaption>
+                        <p >Chilled creamy dessert available in rich and fruity flavors.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.15</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/donut.jpg" alt="donut" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Donut</figcaption>
+                        <p >Soft and fluffy donut with delicious melted chocolate glaze.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/waffle.jpg" alt="waffle" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.8</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Waffle</figcaption>
+                        <p >Crispy golden waffle served with chocolate syrup and toppings.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/tiramisu.jpg" alt="tiramisu" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Tiramisu</figcaption>
+                        <p >Soft coffee-soaked layers blended with creamy mascarpone and cocoa.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.99</span>
+                </div>
+            </div>
+        </div>
+
+         <div class="card drinks hide">
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/milkshake.jpg" alt="milkshake" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Chocolate Brownie Milkshake</figcaption>
+                        <p>Creamy chocolate shake blended with rich brownie chunks.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.89</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/mojito.jpg" alt="mojito" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.7</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Blue Mojito</figcaption>
+                        <p >Refreshing blend of mint, lime juice, and soda.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.00</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/lemonade.jpg" alt="lemonade" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.4</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Lemonade</figcaption>
+                        <p >Chilled lemon drink with a perfect sweet and tangy taste.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/smoothie.jpg" alt="smoothie" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.6</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Mango Yogurt Smoothie</figcaption>
+                        <p >Creamy blend of fresh mango and tangy yogurt, perfect for a refreshing treat.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.50</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/icedtea.jpg" alt="iced tea" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.5</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Iced Tea</figcaption>
+                        <p >Cool refreshing tea served with ice and citrus flavors.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$1.25</span>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-image">
+                    <img src="images/hotchocolate.jpg" alt="hot chocolate" class="item-image">
+                    <div class="menu-item-image2">
+                        <img src="images/star.png" alt="rating" class="star">
+                        <span>4.9</span>
+                    </div>
+                </div>
+                <div class="menu-item-details">
+                    <div>
+                        <figcaption>Creamy Hot Chocolate</figcaption>
+                        <p >Warm rich hot chocolate topped with smooth creamy goodness.</p>
+                    </div>
+                    <img src="images/heart.png" alt="like">
+                </div>
+                <div class="menu-item-price">
+                    <img src="images/shopping-cart.png" alt="add to cart" class="shop">
+                    <span class="price">$2.99</span>
+                </div>
+            </div>
+        </div>
+        </div>  
+    </div>
+    </body>
+</html>
