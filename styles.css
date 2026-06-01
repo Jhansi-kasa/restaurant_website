@@ -503,10 +503,6 @@ body {
     background-color: #d7dad8;
 }
 
-Mobile CSS fixes for Delizia restaurant site
-Fixes applied
-✓ Navbar wrapping ✓ Hero layout ✓ Circle overflow ✓ Menu grid → 1 col ✓ Menu cards ✓ Login page ✓ About section ✓ Special items
-Add this to the bottom of your CSS file
 @media (max-width: 768px) {
 
   /* ── Navbar ── */
