@@ -32,7 +32,7 @@ function booktable(){
         return;
     }
     document.getElementById('tablebook').innerHTML= `<div class="msg"><p class="greet">Congratulations!!!</p><p class="successmsg" >✅Your Table booking is successful for ${date} at ${time}.</p><br><br>
-         <button onclick="window.location.href='home.html'" class="gohomebtn">Go to Home</button></div>`;
+         <button onclick="window.location.href='index.html'" class="gohomebtn">Go to Home</button></div>`;
 }
 function searchitem(){
     let food = document.getElementById('searchfood').value.toLowerCase();
